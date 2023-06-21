@@ -16,15 +16,25 @@ Execute the script with the desired options.
 
 Arguments
 -l domain: Sets the domain to perform the URL search on. The script reads a file with subdomains for the specified domain.
+
 -u url: Specifies a specific URL to perform the extraction and filtering on.
+
 Additional Options
+
 -js: Filters and saves URLs that end with the .js extension.
+
 -json: Filters and saves URLs that end with the .json extension.
+
 -html: Filters and saves URLs that end with the .html extension.
+
 -php: Filters and saves URLs that end with the .php extension.
+
 -base64: Filters and saves URLs that contain the == sequence.
+
 -redirect: Filters and saves URLs that contain the word "redirect".
+
 Functionality
+
 Download the crawler.sh script by cloning the repository or by manually obtaining the script file.
 
 Open a terminal window and navigate to the directory where the crawler.sh script is located.
