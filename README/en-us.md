@@ -1,5 +1,9 @@
 ###############CRAWLER.SH##############
-Crawler.sh is a shell script that enables URL extraction and filtering from a file or a specific URL. 
+  
+  
+  
+  
+  Crawler.sh is a shell script that enables URL extraction and filtering from a file or a specific URL. 
 It provides various options to filter URLs based on extensions and specific patterns, allowing you to collect specific information from the URLs found.
 
 Usage
