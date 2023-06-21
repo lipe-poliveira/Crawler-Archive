@@ -1,20 +1,39 @@
 #  CRAWLER.SH #
 
-Here's an example of using the crawler.sh script:
+Usage
+Download the crawler.sh script to your desired location.
 
-Suppose you have a file named subdomains.txt containing the following subdomains for the domain example.com:
-sub1
-sub2
-sub3
+>> git clone https://github.com/lipe-poliveira/Crawler-Archive.git
 
-You want to extract and filter the URLs that correspond to JavaScript files (.js) and URLs that contain the word "redirect". 
-You can run the following command:
-$ ./crawler.sh -l example.com -js -redirect
+Navigate to the script's directory.
+>> cd crawler.sh
 
-The script will read the subdomains.txt file, construct the request URLs using the web.archive.org service, and save the corresponding URLs to separate files.
+Grant execute permission to the script.
+>> chmod +x crawler.sh
 
-Upon completion, the script will display messages indicating the end of the process. You can find the filtered URLs in the js_urls.txt and redirect_urls.txt files.
+Execute the script with the desired options.
+>> ./crawler.sh [-l domain] [-u url] [-js] [-json] [-html] [-php] [-base64] [-redirect]
 
-Make sure the crawler.sh script is in the current directory, and you have the necessary permissions to execute it. Also, ensure that you have curl installed to successfully make the requests.
+Arguments
+-l domain: Sets the domain to perform the URL search on. The script reads a file with subdomains for the specified domain.
+-u url: Specifies a specific URL to perform the extraction and filtering on.
+Additional Options
+-js: Filters and saves URLs that end with the .js extension.
+-json: Filters and saves URLs that end with the .json extension.
+-html: Filters and saves URLs that end with the .html extension.
+-php: Filters and saves URLs that end with the .php extension.
+-base64: Filters and saves URLs that contain the == sequence.
+-redirect: Filters and saves URLs that contain the word "redirect".
+Functionality
+Download the crawler.sh script by cloning the repository or by manually obtaining the script file.
 
-Remember to customize the parameters according to your needs, such as the domain, filtering options, and the subdomain file.
+Open a terminal window and navigate to the directory where the crawler.sh script is located.
+>> cd /path/to/crawler.sh
+
+Grant execute permission to the script by using the chmod command.
+>> chmod +x crawler.sh
+
+Execute the script with the desired options to perform URL extraction and filtering. Customize the options according to your requirements.
+>> ./crawler.sh -l example.com -js -redirect
+
+Ensure that you have the necessary permissions to execute the script and have the curl utility installed to ensure successful requests. 
